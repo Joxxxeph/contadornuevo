@@ -8,7 +8,6 @@ hh.textContent = count
 incre.addEventListener("click", function(){
     count++
     hh.textContent = count
-    console.log(count)
     if(count >= 5) hh.style.color = "#00bfff"
     if(count >= 10) hh.style.color = "#e60023"
         
@@ -30,5 +29,3 @@ reset.addEventListener("click", function(){
     hh.style.color = "#000"
 })
 
-
-console.log(count)
