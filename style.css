@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+.con {
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: linear-gradient(
+        0deg,
+        rgb(22, 26, 32) 0%,
+        rgba(52, 65, 80, 0.8777) 100%
+    );
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 280px;
+    border-radius: .5rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+.caja {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    
+}
+
+.caja h1 {
+    font-size: 80px;
+    padding: 1.5rem;
+    /* text-shadow: 0 0 2em #fff; */
+}
+
+.btn {
+    display: flex;
+    gap: .8rem;
+} 
+
+.btn .incre, .decre, .reset {
+    padding: .5rem .8rem;
+    border-radius: .3rem;
+    border: 2px solid transparent;
+    transition: background-color .3s, color .3s, border .3s;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.incre {
+    background-color: #00a400;
+}
+
+.decre {
+    background-color: #ffa500;
+}
+.reset {
+    
+    background-color: #e60023;
+    margin-bottom: .5rem;
+}
+
+.incre:hover {
+    background-color: transparent;
+    color: #00a400;
+    border: 2px solid #00a400;
+}
+
+.decre:hover {
+    background-color: transparent;
+    color: #ffa500;
+    border: 2px solid #ffa500;
+}
+
+.reset:hover {
+    background-color: transparent;
+    color: #e60023;
+    border: 2px solid #e60023;
+    
+}
+
+.incre:active, .decre:active, .reset:active {
+    transform: scale(95%);
+}
+
+
+.spiderman {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    
+    animation: spiderman 5s infinite;
+}
+
+@keyframes spiderman {
+    0% {
+        transform: translateY(-20px);
+    }
+    30% {
+        transform: translateY(0) rotate(5deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
